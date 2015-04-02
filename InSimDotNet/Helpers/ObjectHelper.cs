@@ -100,6 +100,15 @@ namespace InSimDotNet.Helpers {
             { 168, new string[] { "Sign", "Sign 80 km/h" }},
             { 169, new string[] { "Sign", "Sign 50 km/h" }},
 
+            { 172, new string[] { "Concrete Slab" }},
+            { 173, new string[] { "Concrete Ramp" }},
+            { 174, new string[] { "Concrete Wall" }},
+            { 175, new string[] { "Concrete Pillar" }},
+            { 176, new string[] { "Concrete Slab Wall" }},
+            { 177, new string[] { "Concrete Ramp Wall" }},
+            { 178, new string[] { "Concrete Short Slab Wall" }}, 
+            { 179, new string[] { "Concrete Wedge" }},
+
             { 255, new string[] { "Marshall", "Marshall Object" }},
         };
 

@@ -41,9 +41,9 @@ namespace InSimDotNet.Packets {
         /// Creates a new reorder packet.
         /// </summary>
         public IS_REO() {
-            Size = 36;
+            Size = 44;
             Type = PacketType.ISP_REO;
-            PLID = new List<byte>(32);
+            PLID = new List<byte>(40);
         }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace InSimDotNet.Packets {
         /// </summary>
         /// <returns>The packet data.</returns>
         public byte[] GetBuffer() {
-            if (PLID.Count > 32) {
+            if (PLID.Count > 40) {
                 throw new InvalidOperationException(StringResources.IsReoPlidErrorMessage);
             }
 

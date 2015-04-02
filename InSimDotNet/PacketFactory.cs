@@ -71,6 +71,8 @@ namespace InSimDotNet {
                     return new IS_MSO(buffer);
                 case PacketType.ISP_NCN:
                     return new IS_NCN(buffer);
+                case PacketType.ISP_NCI:
+                    return new IS_NCI(buffer);
                 case PacketType.ISP_NLP:
                     return new IS_NLP(buffer);
                 case PacketType.ISP_NPL:
@@ -190,6 +192,8 @@ namespace InSimDotNet {
                 return PacketType.ISP_RST;
             if (type == typeof(IS_NCN))
                 return PacketType.ISP_NCN;
+            if (type == typeof(IS_NCI))
+                return PacketType.ISP_NCI;
             if (type == typeof(IS_CNL))
                 return PacketType.ISP_CNL;
             if (type == typeof(IS_CPR))

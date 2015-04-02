@@ -88,5 +88,6 @@ namespace InSimDotNet.Helpers {
             ushort temp;
             return UInt16.TryParse(value, out temp);
         }
+
     }
 }
