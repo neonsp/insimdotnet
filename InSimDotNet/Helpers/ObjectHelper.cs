@@ -30,6 +30,7 @@ namespace InSimDotNet.Helpers {
             { 28, new string[] { "Cone", "Cone White" }},
             { 29, new string[] { "Cone", "Cone Yellow Striped" }},
             { 30, new string[] { "Cone", "Cone Yellow" }},
+
             { 40, new string[] { "Cone", "Cone Red Directional" }},
             { 41, new string[] { "Cone", "Cone Blue Directional" }},
             { 42, new string[] { "Cone", "Cone Green Directional" }},
@@ -93,6 +94,7 @@ namespace InSimDotNet.Helpers {
             { 144, new string[] { "Bale", "Bale" }},
 
             { 148, new string[] { "Railing", "Railing" }},
+            { 149, new string[] { "Control", "Start lights" }},
 
             { 160, new string[] { "Sign", "Sign Keep Left" }},
             { 161, new string[] { "Sign", "Sign Keep Right" }},
@@ -100,16 +102,21 @@ namespace InSimDotNet.Helpers {
             { 168, new string[] { "Sign", "Sign 80 km/h" }},
             { 169, new string[] { "Sign", "Sign 50 km/h" }},
 
-            { 172, new string[] { "Concrete Slab" }},
-            { 173, new string[] { "Concrete Ramp" }},
-            { 174, new string[] { "Concrete Wall" }},
-            { 175, new string[] { "Concrete Pillar" }},
-            { 176, new string[] { "Concrete Slab Wall" }},
-            { 177, new string[] { "Concrete Ramp Wall" }},
-            { 178, new string[] { "Concrete Short Slab Wall" }}, 
-            { 179, new string[] { "Concrete Wedge" }},
+            { 172, new string[] { "Concrete", "Concrete Slab" }},
+            { 173, new string[] { "Concrete", "Concrete Ramp" }},
+            { 174, new string[] { "Concrete", "Concrete Wall" }},
+            { 175, new string[] { "Concrete", "Concrete Pillar" }},
+            { 176, new string[] { "Concrete", "Concrete Slab Wall" }},
+            { 177, new string[] { "Concrete", "Concrete Ramp Wall" }},
+            { 178, new string[] { "Concrete", "Concrete Short Slab Wall" }}, 
+            { 179, new string[] { "Concrete", "Concrete Wedge" }},
 
-            { 255, new string[] { "Marshall", "Marshall Object" }},
+            { 184, new string[] { "Control", "Start position" }},
+            { 185, new string[] { "Control", "Pit Start Point" }},
+            { 186, new string[] { "Control", "Pit Stop Box" }},
+
+            { 254, new string[] { "Marshall", "Restricted area" }},
+            { 255, new string[] { "Marshall", "Route checker" }},
         };
 
         /// <summary>

@@ -29,22 +29,22 @@ namespace InSimDotNet.Packets {
         public byte UCID { get; private set; }
 
         /// <summary>
-        /// Gets the LFS username of the connection.
+        /// Gets the LFS Language username.
         /// </summary>
-        public Languages Language { get; set; }
+        public Languages Language { get; private set; }
 
         /// <summary>
         /// Gets the LFS UserID
         /// </summary>
-        public int UserID { get; set; }
+        public int UserID { get; private set; }
 
         /// <summary>
         /// Gets the IP Address of the connection.
         /// </summary>
-        public int IPAddress { get; set; }
+        public int IPAddress { get; private set; }
 
         /// <summary>
-        /// Creates a new new connection packet.
+        /// Creates a new new connection info packet.
         /// </summary>
         public IS_NCI() {
             Size = 16;
@@ -52,7 +52,7 @@ namespace InSimDotNet.Packets {
         }
 
         /// <summary>
-        /// Creates a new new connection packet.
+        /// Creates a new new connection info packet.
         /// </summary>
         /// <param name="buffer">A buffer contaning the packet data.</param>
         public IS_NCI(byte[] buffer)
