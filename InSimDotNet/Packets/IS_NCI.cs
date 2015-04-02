@@ -31,17 +31,17 @@ namespace InSimDotNet.Packets {
         /// <summary>
         /// Gets the LFS username of the connection.
         /// </summary>
-        public byte Language { get; set; }
+        public Languages Language { get; set; }
 
         /// <summary>
         /// Gets the LFS UserID
         /// </summary>
-        public uint UserID { get; set; }
+        public int UserID { get; set; }
 
         /// <summary>
         /// Gets the IP Address of the connection.
         /// </summary>
-        public uint IPAddress { get; set; }
+        public int IPAddress { get; set; }
 
         /// <summary>
         /// Creates a new new connection packet.
@@ -62,10 +62,10 @@ namespace InSimDotNet.Packets {
             Type = (PacketType)reader.ReadByte();
             ReqI = reader.ReadByte();
             UCID = reader.ReadByte();
-            Language = reader.ReadByte();
+            Language = (Languages)reader.ReadByte();
             reader.Skip(3);  //sp1, sp2, sp3
-            UserID = reader.ReadUInt32();
-            IPAddress = reader.ReadUInt32();
+            UserID = (int)reader.ReadUInt32();
+            IPAddress = (int)reader.ReadUInt32();
         }
     }
 }

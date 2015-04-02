@@ -1,46 +1,193 @@
 ﻿namespace InSimDotNet.Packets
 {
     /// <summary>
-    /// Enumeration for the <see cref="IS_CNI"/> language enum
+    /// Enumeration for the <see cref="IS_NCI"/> disconnect reason.
     /// </summary>
-    public enum LanguageEnum
+    public enum Languages
     {
-        LFS_ENGLISH,			
-        LFS_DEUTSCH,				// 1
-        LFS_PORTUGUESE,				// 2
-        LFS_FRENCH,					// 3
-        LFS_SUOMI,					// 4
-        LFS_NORSK,					// 5
-        LFS_NEDERLANDS,				// 6
-        LFS_CATALAN,				// 7
-        LFS_TURKISH,				// 8
-        LFS_CASTELLANO,				// 9
-        LFS_ITALIANO,				// 10
-        LFS_DANSK,					// 11
-        LFS_CZECH,					// 12
-        LFS_RUSSIAN,				// 13
-        LFS_ESTONIAN,				// 14
-        LFS_SERBIAN,				// 15
-        LFS_GREEK,					// 16
-        LFS_POLSKI,					// 17
-        LFS_CROATIAN,				// 18
-        LFS_HUNGARIAN,				// 19
-        LFS_BRAZILIAN,				// 20
-        LFS_SWEDISH,				// 21
-        LFS_SLOVAK,					// 22
-        LFS_GALEGO,					// 23
-        LFS_SLOVENSKI,				// 24
-        LFS_BELARUSSIAN,			// 25
-        LFS_LATVIAN,				// 26
-        LFS_LITHUANIAN,				// 27
-        LFS_TRADITIONAL_CHINESE,	// 28
-        LFS_SIMPLIFIED_CHINESE,		// 29
-        LFS_JAPANESE,				// 30
-        LFS_KOREAN,					// 31
-        LFS_BULGARIAN,				// 32
-        LFS_LATINO,					// 33
-        LFS_UKRAINIAN,				// 34
-        LFS_INDONESIAN,				// 35
-        LFS_ROMANIAN,				// 36
+        /// <summary>
+        /// English - 0
+        /// </summary>
+        LFS_ENGLISH,
+
+        /// <summary>
+        /// Deutsch - 1
+        /// </summary>
+        LFS_DEUTSCH,
+				
+        /// <summary>
+        /// Portuguese - 2
+        /// </summary>
+        LFS_PORTUGUESE,	
+		
+        /// <summary>
+        /// French - 3
+        /// </summary>
+        LFS_FRENCH,	
+				
+        /// <summary>
+        /// Suomi - 4
+        /// </summary>
+        LFS_SUOMI,	
+				
+        /// <summary>
+        /// Norsk - 5
+        /// </summary>
+        LFS_NORSK,	
+				
+        /// <summary>
+        /// Nederlands - 6
+        /// </summary>
+        LFS_NEDERLANDS,	
+			
+        /// <summary>
+        /// Catalan - 7
+        /// </summary>
+        LFS_CATALAN,	
+			
+        /// <summary>
+        /// Turkish - 8
+        /// </summary>
+        LFS_TURKISH,	
+			
+        /// <summary>
+        /// Castellano - 9
+        /// </summary>
+        LFS_CASTELLANO,	
+			
+        /// <summary>
+        /// Italiano - 10
+        /// </summary>
+        LFS_ITALIANO,	
+			
+        /// <summary>
+        /// Dansk - 11
+        /// </summary>
+        LFS_DANSK,		
+			
+        /// <summary>
+        /// Czech - 12
+        /// </summary>
+        LFS_CZECH,		
+			
+        /// <summary>
+        /// Russian - 13
+        /// </summary>
+        LFS_RUSSIAN,	
+			
+        /// <summary>
+        /// Estonian - 14
+        /// </summary>
+        LFS_ESTONIAN,	
+			
+        /// <summary>
+        /// Serbian - 15
+        /// </summary>
+        LFS_SERBIAN,
+
+        /// <summary>
+        /// Greek - 16
+        /// </summary>
+        LFS_GREEK,		
+			
+        /// <summary>
+        /// Polski - 17
+        /// </summary>
+        LFS_POLSKI,		
+			
+        /// <summary>
+        /// Croatian - 18
+        /// </summary>
+        LFS_CROATIAN,
+				
+        /// <summary>
+        /// Hungarian - 19
+        /// </summary>
+        LFS_HUNGARIAN,
+
+        /// <summary>
+        /// Brazilian - 20
+        /// </summary>
+        LFS_BRAZILIAN,
+
+        /// <summary>
+        /// Swedish - 21
+        /// </summary>
+        LFS_SWEDISH,
+				
+        /// <summary>
+        /// Slovak - 22
+        /// </summary>
+        LFS_SLOVAK,					
+
+        /// <summary>
+        /// Galego - 23
+        /// </summary>
+        LFS_GALEGO,	
+
+        /// <summary>
+        /// Slovenski - 24
+        /// </summary>
+        LFS_SLOVENSKI,
+
+        /// <summary>
+        /// Belarussian - 25
+        /// </summary>
+        LFS_BELARUSSIAN,
+
+        /// <summary>
+        /// Latvian - 26
+        /// </summary>
+        LFS_LATVIAN,
+
+        /// <summary>
+        /// Lithuanian - 27
+        /// </summary>
+        LFS_LITHUANIAN,
+
+        /// <summary>
+        /// Traditional Chinese - 28
+        /// </summary>
+        LFS_TRADITIONAL_CHINESE,
+
+        /// <summary>
+        /// Simplified Chinese - 29
+        /// </summary>
+        LFS_SIMPLIFIED_CHINESE,	
+
+        /// <summary>
+        /// Japanese - 30
+        /// </summary>
+        LFS_JAPANESE,
+
+        /// <summary>
+        /// Korean - 31
+        /// </summary>
+        LFS_KOREAN,	
+
+        /// <summary>
+        /// Bulgarian - 32
+        /// </summary>
+        LFS_BULGARIAN,
+
+        /// <summary>
+        /// Latino - 33
+        /// </summary>
+        LFS_LATINO,	
+
+        /// <summary>
+        /// Ukrainian - 34
+        /// </summary>
+        LFS_UKRAINIAN,
+
+        /// <summary>
+        /// Indonesian - 35
+        /// </summary>
+        LFS_INDONESIAN,	
+
+        /// <summary>
+        /// Romanian - 36
+        /// </summary>
+        LFS_ROMANIAN,				
     }
 }
